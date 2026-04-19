@@ -1,36 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Image & Table</title>
+    <title>Foodcourt Nusantara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Bagian Header Orange */
+        header {
+            background-color: #FFA500; /* Warna orange sesuai gambar */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .logo-container img {
+            width: 150px; /* Ukuran logo tengah */
+            border-radius: 10px;
+        }
+
+        /* Navigasi Hitam */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        /* Judul Daftar Menu */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styling Tabel */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Ukuran Gambar di Tabel */
+        .img-menu {
+            width: 120px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Bagian Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h3>Daftar Barang</h3>
-<table border="1">
-        <caption>Tabel Harga Produk</caption>
-        <tr>
-            <th>Kode Produk</th>
-            <th>Nama Produk</th>
-            <th>Harga</th>
-            <th>Gambar</th>
-        </tr>
-        <tr>
-            <td>P001</td>
-            <td>Kipas Angin</td>
-            <td>400.000</td>
-            <td><img src="kipasangin.jpg" width="145" height="150"></td>
-        </tr>
-        <tr>
-            <td>P002</td>
-            <td>Lemari Es</td>
-            <td>1700.000</td>
-            <td><img src="lemari_es.jpg" width="145" height="150"></td>
-        </tr>
-        <tr>
-            <td>P003</td>
-            <td>Mesin Cuci</td>
-            <td>2000.000</td>
-            <td><img src="mesincuci.jpg" width="145" height="150"></td>
-        </tr>
-    </table>
+
+    <header>
+        <h1>Foodcourt Nusantara</h1>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Foodcourt">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <div class="content">
+        <h2>Daftar Menu</h2>
+
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama Makanan</th>
+                <th>Harga</th>
+                <th>Gambar</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nasi Goreng</td>
+                <td>Rp 20.000</td>
+                <td><img src="nasigoreng.jpg" class="img-menu" alt="Nasi Goreng"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mie Ayam</td>
+                <td>Rp 15.000</td>
+                <td><img src="mieayam.jpg" class="img-menu" alt="Mie Ayam"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sate Ayam</td>
+                <td>Rp 25.000</td>
+                <td><img src="sateayam.jpg" class="img-menu" alt="Sate Ayam"></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        &copy; Ikoowl
+    </footer>
+
 </body>
 </html>
