@@ -1,100 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Foodcourt Nusantara</title>
+    <title>Praktikum Web - Daftar Barang</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Harrington, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
 
-        /* Bagian Header Orange */
         header {
-            background-color: #FFA500; /* Warna orange sesuai gambar */
+            background-color: #3D74B6;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
         }
 
         header h1 {
-            color: white;
-            margin: 0;
-            padding-bottom: 10px;
+            color: rgb(251, 245, 222);
+            margin: 0 0 10px 0;
         }
 
-        .logo-container img {
-            width: 150px; /* Ukuran logo tengah */
+        .logo-box {
+            background-color: rgb(255, 246, 246);
+            display: inline-block;
+            padding: 10px;
             border-radius: 10px;
+            
         }
-
-        /* Navigasi Hitam */
+.logo-box img {
+    height: 250px;
+    width: 250px;
+}
         nav {
-            background-color: #333;
+            background-color: #DC3C22;
             text-align: center;
             padding: 10px 0;
         }
 
         nav a {
-            color: white;
+            color: #FBF5DE;
             text-decoration: none;
             margin: 0 15px;
             font-size: 14px;
         }
 
-        /* Judul Daftar Menu */
-        .content {
-            padding: 20px;
+        .container {
             text-align: center;
+            padding: 20px;
         }
 
-        /* Styling Tabel */
         table {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
             border-collapse: collapse;
-            background-color: white;
         }
 
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid #DC3C22;
         }
 
         th {
             padding: 10px;
-            background-color: #fff;
+            background-color: #EAC8A6;
         }
 
         td {
-            padding: 15px;
-            text-align: center;
+            padding: 10px;
+            height: 150px; 
         }
 
-        /* Ukuran Gambar di Tabel */
-        .img-menu {
-            width: 120px;
+        .img-produk {
+            width: 150px;
             height: auto;
-            border-radius: 5px;
         }
 
-        /* Bagian Footer */
         footer {
-            background-color: black;
-            color: white;
+            background-color: #3D74B6;
+            color: #FBF5DE;
             text-align: center;
             padding: 15px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Foodcourt Nusantara</h1>
-        <div class="logo-container">
-            <img src="logo.png" alt="Logo Foodcourt">
+        <h1>Juragan Elektronik</h1>
+        <div class="logo-box">
+            <img src="logo.png" alt="Logo" width="120">
         </div>
     </header>
 
@@ -104,39 +98,40 @@
         <a href="#">Kontak</a>
     </nav>
 
-    <div class="content">
-        <h2>Daftar Menu</h2>
+    <div class="container">
+        <h2>Daftar Barang</h2>
+        <h3>Tabel Harga Produk</h3>
 
         <table>
             <tr>
-                <th>No</th>
-                <th>Nama Makanan</th>
+                <th>Kode Produk</th>
+                <th>Nama Produk</th>
                 <th>Harga</th>
                 <th>Gambar</th>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Nasi Goreng</td>
-                <td>Rp 20.000</td>
-                <td><img src="nasigoreng.jpg" class="img-menu" alt="Nasi Goreng"></td>
+                <td>P001</td>
+                <td>Kipas Angin</td>
+                <td>400.000</td>
+                <td><img src="kipasangin.jpg" class="img-produk" alt="Kipas Angin"></td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Mie Ayam</td>
-                <td>Rp 15.000</td>
-                <td><img src="mieayam.jpg" class="img-menu" alt="Mie Ayam"></td>
+                <td>P002</td>
+                <td>Lemari Es</td>
+                <td>1.700.000</td>
+                <td><img src="lemari_es.jpg" class="img-produk" alt="Lemari Es"></td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Sate Ayam</td>
-                <td>Rp 25.000</td>
-                <td><img src="sateayam.jpg" class="img-menu" alt="Sate Ayam"></td>
+                <td>P003</td>
+                <td>Mesin Cuci</td>
+                <td>2.000.000</td>
+                <td><img src="mesincuci.jpg" class="img-produk" alt="Mesin Cuci"></td>
             </tr>
         </table>
     </div>
 
     <footer>
-        &copy; Ikoowl
+        &copy;Ikoowl
     </footer>
 
 </body>
